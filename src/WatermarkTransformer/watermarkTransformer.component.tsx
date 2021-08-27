@@ -21,7 +21,7 @@ export const WatermarkTransformerComponent = (): JSX.Element => {
     <ContentWrapper>
       <VideoBlock>
         <VideoLabel>Original Video</VideoLabel>
-        <Video ref={originalPlayerRef} muted />
+        <Video ref={originalPlayerRef} muted playsInline />
       </VideoBlock>
 
       <VideoBlock>
@@ -31,7 +31,7 @@ export const WatermarkTransformerComponent = (): JSX.Element => {
 
       <VideoBlock>
         <VideoLabel>Result Video</VideoLabel>
-        <Video ref={destinationPlayerRef} muted controls />
+        <Video ref={destinationPlayerRef} muted controls playsInline />
       </VideoBlock>
     </ContentWrapper>
   );
