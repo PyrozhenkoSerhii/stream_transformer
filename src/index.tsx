@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   html, body, #root {
     margin: 0;
     min-height: 100%;
-    overflow-y: hidden;
+    overflow-x: hidden;
     display: flex;
     flex-grow: 1;
   }

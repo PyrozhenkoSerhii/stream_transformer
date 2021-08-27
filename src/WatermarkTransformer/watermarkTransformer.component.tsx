@@ -31,7 +31,7 @@ export const WatermarkTransformerComponent = (): JSX.Element => {
 
       <VideoBlock>
         <VideoLabel>Result Video</VideoLabel>
-        <Video ref={destinationPlayerRef} />
+        <Video ref={destinationPlayerRef} muted controls />
       </VideoBlock>
     </ContentWrapper>
   );
