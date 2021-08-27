@@ -15,7 +15,6 @@ export const VideoBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
   margin: 10px;
   width: 480px;
 `;

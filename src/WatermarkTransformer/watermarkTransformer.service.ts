@@ -75,7 +75,7 @@ class WatermarkTranformerService {
     const extraWidth = (streamWidth - streamHeight) >= 0 ? (streamWidth - streamHeight) : 0;
     const extraHeight = (streamHeight - streamWidth) >= 0 ? (streamHeight - streamWidth) : 0;
 
-    const targetSize = extraWidth ? streamHeight : streamHeight;
+    const targetSize = extraWidth ? streamHeight : streamWidth;
 
     return {
       originalWidth: streamWidth,
