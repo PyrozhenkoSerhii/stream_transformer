@@ -1,4 +1,5 @@
 {
+  "homepage": "https://PyrozhenkoSerhii.github.io/stream_transformer",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -26,11 +27,14 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
+    "gh-pages": "^3.2.3",
     "typescript": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
