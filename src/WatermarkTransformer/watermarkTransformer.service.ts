@@ -168,6 +168,7 @@ class WatermarkTranformerService {
     targetPlayer: HTMLVideoElement,
     audioStream: MediaStream,
   ) => {
+    canvas.getContext("2d"); // Firefox fix (it requires to request context first)
     const stream: MediaStream = canvas.captureStream(FPS);
     stream.addTrack(audioStream.getAudioTracks()[0]);
 
